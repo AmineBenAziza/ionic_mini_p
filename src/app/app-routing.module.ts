@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'add-post',
+    loadChildren: () => import('./add-post/add-post.module').then( m => m.AddPostPageModule)
+  },
+  {
+    path: 'edit-post',
+    loadChildren: () => import('./edit-post/edit-post.module').then( m => m.EditPostPageModule)
+  },
+  {
+    path: 'show-post',
+    loadChildren: () => import('./show-post/show-post.module').then( m => m.ShowPostPageModule)
+  },
+  {
+    path: 'posts',
+    loadChildren: () => import('./posts/posts.module').then( m => m.PostsPageModule)
+  },
+  {
+    path: 'navbar',
+    loadChildren: () => import('./navbar/navbar.module').then( m => m.NavbarPageModule)
+  },
 ];
 
 @NgModule({
