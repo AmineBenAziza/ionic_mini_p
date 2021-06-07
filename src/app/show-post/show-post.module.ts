@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ShowPostPageRoutingModule } from './show-post-routing.module';
 
 import { ShowPostPage } from './show-post.page';
+import { NavbarPage } from '../navbar/navbar.page';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { ShowPostPage } from './show-post.page';
     IonicModule,
     ShowPostPageRoutingModule
   ],
-  declarations: [ShowPostPage]
+  declarations: [ShowPostPage , NavbarPage]
 })
 export class ShowPostPageModule {}

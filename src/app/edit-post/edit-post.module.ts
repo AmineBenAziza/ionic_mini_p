@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { EditPostPageRoutingModule } from './edit-post-routing.module';
 
 import { EditPostPage } from './edit-post.page';
+import { NavbarPage } from '../navbar/navbar.page';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { EditPostPage } from './edit-post.page';
     IonicModule,
     EditPostPageRoutingModule
   ],
-  declarations: [EditPostPage]
+  declarations: [EditPostPage , NavbarPage]
 })
 export class EditPostPageModule {}

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { PostsPageRoutingModule } from './posts-routing.module';
 
 import { PostsPage } from './posts.page';
+import { NavbarPage } from '../navbar/navbar.page';
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { PostsPage } from './posts.page';
     IonicModule,
     PostsPageRoutingModule
   ],
-  declarations: [PostsPage]
+  declarations: [PostsPage , NavbarPage]
 })
 export class PostsPageModule {}

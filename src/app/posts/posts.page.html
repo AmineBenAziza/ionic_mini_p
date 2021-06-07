@@ -1,9 +1,36 @@
 <ion-header>
+  <app-navbar></app-navbar>
   <ion-toolbar>
     <ion-title>posts</ion-title>
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
+
+  <table class="table">
+    <thead>
+      <th scope="col">#</th>
+      <th scope="col">title</th>
+      <th scope="col">description</th>
+      <th scope="col">cover</th>
+
+    </thead>
+    <tbody>
+      <tr *ngFor=" let post of posts; index as i">
+      <th scope="row">{{ i+1 }}</th>
+      <td>{{post.title}}</td>
+      <td>{{post.description}}</td>
+      <td><img src="{{post.cover}}"></td>
+      <td>
+          <button type="button" class="btn btn-outline-success">Edit</button>
+          <button type="button" class="btn btn-outline-danger">Delete</button>
+      </td>
+    </tr>
+    </tbody>
+    <tbody>
+
+    </tbody>
+  </table>
 
 </ion-content>
